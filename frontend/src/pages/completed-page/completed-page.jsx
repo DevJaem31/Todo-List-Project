@@ -10,12 +10,20 @@ const TaskCardComponent = React.lazy(() =>
 const ConfirmationModal = React.lazy(() =>
 	import('../../components/confirmation-modal/confirmation-modal'),
 );
+const EditTaskModal = React.lazy(() => import('../../components/edit-task-modal/edit-task-modal'));
 
 function CompletedPage() {
 	const [tasks, setTasks] = useState([]);
 	const [showConfirmationModal, setShowConfirmationModal] = useState(false);
 	const [taskIdToDelete, setTaskIdToDelete] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const [taskIdToEdit, setTaskIdToEdit] = useState(null);
+	const [showEditTaskModal, setShowEditTaskModal] = useState(false);
+
+	const handleEditTaskClick = (taskId) => {
+		setTaskIdToEdit(taskId);
+		setShowEditTaskModal(true);
+	};
 
 	const getTasks = async () => {
 		try {
@@ -96,6 +104,7 @@ function CompletedPage() {
 							description={task.description}
 							dueDate={task.dueDate}
 							onDelete={() => handleDeleteTaskClick(task._id)}
+							onEdit={() => handleEditTaskClick(task._id)}
 						/>
 					))
 				) : (
@@ -114,6 +123,14 @@ function CompletedPage() {
 				<ConfirmationModal
 					handleCloseModal={() => setShowConfirmationModal(false)}
 					handleDeleteTask={() => handleDeleteTask(taskIdToDelete)}
+				/>
+			)}
+
+			{showEditTaskModal && (
+				<EditTaskModal
+					handleCloseModal={() => setShowEditTaskModal(false)}
+					getTasks={getTasks}
+					taskId={taskIdToEdit}
 				/>
 			)}
 		</div>
