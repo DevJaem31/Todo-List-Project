@@ -1,0 +1,36 @@
+.form-container {
+	background: rgba(147, 224, 255, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border: 1px solid #ffffff11;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.068);
+	padding: 2rem;
+	animation: fullUp 0.9s ease-in-out;
+}
+
+.header-sign-up-container {
+	animation: dropDown 0.8s ease-in-out;
+}
+
+@keyframes dropDown {
+	0% {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fullUp {
+	0% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
