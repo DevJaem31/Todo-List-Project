@@ -95,6 +95,7 @@ function SidebarComponent() {
 			<div className='footer absolute bottom-12'>
 				<p className='opacity-30 text-xs  '>Contact: johnmarkflameno@gmail.com</p>
 			</div>
+
 			{showProfile && (
 				<div className='profile-modal absolute top-35 left-85 bg-gray-600 shadow-lg rounded-lg p-4 mt-2'>
 					<p className='text-lg font-semibold '>{username}</p>

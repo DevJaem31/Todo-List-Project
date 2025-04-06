@@ -18,7 +18,6 @@ function HomePage() {
 				</div>
 
 				<div className='col-span-4'>
-					{/* Main Content */}
 					<div className='main-content'>
 						<Outlet />
 					</div>

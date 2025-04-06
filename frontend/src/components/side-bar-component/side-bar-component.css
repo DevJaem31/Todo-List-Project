@@ -13,4 +13,12 @@
 		flex-direction: row;
 		align-items: center;
 	}
+
+	.footer {
+		display: none;
+	}
+
+	.profile-modal {
+		left: 5rem;
+	}
 }
