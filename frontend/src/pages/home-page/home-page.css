@@ -13,4 +13,12 @@
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.header-home-container h1 {
+		font-size: 1rem;
+	}
+
+	.sidebar-component {
+		width: 100%;
+	}
 }

@@ -46,7 +46,7 @@ function SidebarComponent() {
 	};
 
 	return (
-		<div className='flex flex-col items-start space-x-3 h-[85vh] p-4 mt-2 rounded-lg shadow-lg'>
+		<div className='side-bar-component flex flex-col items-start space-x-3 h-[85vh]  p-4 mt-2 rounded-lg shadow-lg'>
 			<div
 				className='account-container border-b-2 w-[100%] pb-3 border-violet-500/10 flex items-center gap-3 onClick cursor-pointer'
 				onClick={showProfileModal}

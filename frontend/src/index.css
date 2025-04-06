@@ -37,6 +37,7 @@ body {
 
 @media (max-width: 1024px) {
 	body {
+		padding: 1%;
 		width: 100%;
 	}
 }

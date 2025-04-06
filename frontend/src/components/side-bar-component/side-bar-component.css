@@ -1,3 +1,10 @@
 .account-container:hover .username-text {
 	text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+	.side-bar-component {
+		width: 100%;
+		height: fit-content;
+	}
+}
