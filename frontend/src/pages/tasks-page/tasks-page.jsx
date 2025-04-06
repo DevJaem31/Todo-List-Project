@@ -82,15 +82,6 @@ function TasksPage() {
 				Tasks Page
 			</h1>
 
-			<div className='add-task-floater absolute bottom-2 right-2 flex items-center justify-center  '>
-				<button
-					onClick={handleAddTaskClick}
-					className='add-task-button text-xl bg-purple-500/20 rounded-full px-5 py-2 hover:bg-purple-700/20 transition-all 0.15s ease-in-out cursor-pointer font-semibold'
-				>
-					&#10011; Add Task
-				</button>
-			</div>
-
 			<div className='task-list-container grid grid-cols-1 h-full overflow-y-scroll sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-1 mt-5'>
 				{loading ? (
 					[...Array(6)].map((_, index) => (
@@ -136,6 +127,15 @@ function TasksPage() {
 						<h2 className='text-xl font-bold text-gray-700'>No Tasks Available</h2>
 					</div>
 				)}
+			</div>
+
+			<div className='add-task-floater absolute bottom-2 right-2 flex items-center justify-center  '>
+				<button
+					onClick={handleAddTaskClick}
+					className='add-task-button text-xl bg-purple-500/20 rounded-full px-5 py-2 hover:bg-purple-700/20 transition-all 0.15s ease-in-out cursor-pointer font-semibold'
+				>
+					&#10011; Add Task
+				</button>
 			</div>
 
 			{showAddTaskModal && (

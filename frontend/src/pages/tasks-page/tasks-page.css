@@ -12,7 +12,17 @@
 		height: fit-content;
 	}
 
+	.tasks-page-container {
+		height: fit-content;
+		padding: 0 1rem;
+	}
+
+	.tasks-page-container h1 {
+		font-size: 1.5rem;
+	}
+
 	.add-task-button {
+		position: relative;
 		background-color: var(--accent-border);
 	}
 }
