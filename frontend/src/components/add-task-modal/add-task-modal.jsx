@@ -29,7 +29,7 @@ function AddTaskModal({ handleCloseModal, getTasks }) {
 
 	return (
 		<div className='fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm'>
-			<div className='relative bg-[var(--background-color)] text-white rounded-lg shadow-xl p-6 w-[45%]'>
+			<div className='relative bg-[var(--background-color)] text-white rounded-lg shadow-xl p-6 w-[45%] modal-container'>
 				<button
 					onClick={handleCloseModal}
 					className='absolute top-3 right-3 text-gray-400 hover:text-gray-200 cursor-pointer transition duration-200'

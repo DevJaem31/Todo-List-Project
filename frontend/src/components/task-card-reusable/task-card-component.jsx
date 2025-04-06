@@ -50,7 +50,7 @@ function TaskCardComponent({
 							<span className='text-white text-xs flex items-center justify-center'>✔</span>
 						)}
 					</button>
-					<h3 className='text-base leading-5 font-semibold text-wrap w-[90%] truncate'>{title}</h3>
+					<h3 className='text-base leading-5 font-semibold text-wrap w-[85%] truncate'>{title}</h3>
 				</div>
 
 				{description && <p className='text-sm text-gray-400 mb-2 line-clamp-2'>{description}</p>}
