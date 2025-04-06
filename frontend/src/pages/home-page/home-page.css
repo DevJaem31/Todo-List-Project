@@ -9,16 +9,10 @@
 
 @media (max-width: 768px) {
 	.container-home-content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		grid-template-columns: 1fr;
 	}
 
 	.header-home-container h1 {
 		font-size: 1.5rem;
-	}
-
-	.sidebar-component-container {
-		grid-column: span 4;
 	}
 }
