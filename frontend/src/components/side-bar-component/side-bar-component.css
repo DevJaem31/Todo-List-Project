@@ -18,6 +18,14 @@
 		display: none;
 	}
 
+	li {
+		text-align: center;
+	}
+
+	.nav-list ul li Link {
+		text-align: center;
+	}
+
 	.profile-modal {
 		left: 5rem;
 		width: 70%;
