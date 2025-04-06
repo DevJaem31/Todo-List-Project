@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './add-task-modal.css';
 import { getTodayDate } from '../../utils/dateUtils';
 import { addTask } from '../../services/taskServices';
 import { toast } from 'react-hot-toast';
