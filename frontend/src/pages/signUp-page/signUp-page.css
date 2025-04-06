@@ -34,3 +34,10 @@
 		opacity: 1;
 	}
 }
+
+@media (max-width: 768px) {
+	.form-container {
+		width: 100%;
+		height: fit-content;
+	}
+}

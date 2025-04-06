@@ -34,3 +34,10 @@
 		opacity: 1;
 	}
 }
+
+@media (max-width: 768px) {
+	.signIn-page-content {
+		width: 100%;
+		height: fit-content;
+	}
+}

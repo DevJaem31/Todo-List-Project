@@ -19,6 +19,6 @@
 	}
 
 	.sidebar-component-container {
-		grid-column: auto;
+		grid-column: span 4;
 	}
 }
