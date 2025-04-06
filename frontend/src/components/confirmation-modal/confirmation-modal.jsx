@@ -1,9 +1,10 @@
 import React from 'react';
+import './confirmation-modal.css';
 
 function ComfirmationModal({ handleCloseModal, handleDeleteTask }) {
 	return (
 		<div className='fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm'>
-			<div className='relative bg-[var(--background-color)] text-white rounded-lg shadow-xl p-6 w-[25%]'>
+			<div className='relative bg-[var(--background-color)] text-white rounded-lg shadow-xl p-6 w-[25%] confirmation-modal-container'>
 				<div className='confirmation-message flex items-center justify-center flex-col'>
 					<h2 className='text-2xl font-bold mb-4 text-purple-400'>Are you sure?</h2>
 					<p className='text-gray-300'>Do you want to delete this task?</p>
