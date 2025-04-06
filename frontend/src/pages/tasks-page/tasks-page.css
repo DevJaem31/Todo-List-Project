@@ -14,15 +14,19 @@
 
 	.tasks-page-container {
 		height: fit-content;
-		padding: 0 1rem;
+		padding: 1rem 1rem;
+		gap: 1rem;
 	}
 
 	.tasks-page-container h1 {
 		font-size: 1.5rem;
 	}
 
-	.add-task-button {
+	.add-task-floater {
 		position: relative;
+	}
+
+	.add-task-button {
 		background-color: var(--accent-border);
 	}
 }

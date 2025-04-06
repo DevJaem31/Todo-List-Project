@@ -82,7 +82,7 @@ function TasksPage() {
 				Tasks Page
 			</h1>
 
-			<div className='task-list-container grid grid-cols-1 h-full overflow-y-scroll sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-1 mt-5'>
+			<div className='task-list-container grid grid-cols-1 auto-rows-max h-[75vh] overflow-y-scroll sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-1 mt-5'>
 				{loading ? (
 					[...Array(6)].map((_, index) => (
 						<div
