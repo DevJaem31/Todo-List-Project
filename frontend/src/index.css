@@ -38,13 +38,14 @@ body {
 @media (max-width: 1024px) {
 	body {
 		padding: 1%;
-		width: 90%;
+		width: 80%;
 	}
 }
 
 @media (max-width: 767px) {
 	body {
 		width: 100%;
+		padding: 2%;
 	}
 }
 
