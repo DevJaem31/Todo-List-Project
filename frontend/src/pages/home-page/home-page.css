@@ -6,3 +6,11 @@
 	padding: 15px;
 	background-image: var(--accent-background);
 }
+
+@media (max-width: 768px) {
+	.container-home-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
