@@ -1,3 +1,9 @@
 .header-component-img {
 	background-image: var(--accent-background);
 }
+
+@media (max-width: 768px) {
+	.header-component-logo {
+		height: calc(250px / 1.6);
+	}
+}
