@@ -15,10 +15,10 @@
 	}
 
 	.header-home-container h1 {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 
-	.sidebar-component {
-		width: 100%;
+	.sidebar-component-container {
+		grid-column: auto;
 	}
 }

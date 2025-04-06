@@ -11,7 +11,7 @@ function HomePage() {
 			</div>
 
 			<div className='container-home-content grid grid-cols-5'>
-				<div className='col-span-1'>
+				<div className='col-span-1 sidebar-component-container'>
 					<div className='sidebar-component'>
 						<SidebarComponent />
 					</div>

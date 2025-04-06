@@ -7,4 +7,10 @@
 		width: 100%;
 		height: fit-content;
 	}
+
+	.nav-list ul {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 }
