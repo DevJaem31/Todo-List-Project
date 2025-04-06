@@ -77,7 +77,7 @@ function TasksPage() {
 	};
 
 	return (
-		<div className='tasks-page-container relative h-[85vh] p-4 mt-2 rounded-lg shadow-lg'>
+		<div className='tasks-page-container relative h-[85vh] p-4 mt-2 flex flex-col gap-2 align-start rounded-lg shadow-lg'>
 			<h1 className='text-3xl w-[100%] border-b-2 pb-2 border-purple-500/10 font-bold tracking-widest'>
 				Tasks Page
 			</h1>
