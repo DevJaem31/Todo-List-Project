@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './task-card-component.css';
 import { updateTaskCompletion } from '../../services/taskServices';
 import { formatDueDate } from '../../utils/dateUtils';
 import editIcon from '../../assets/icons/edit-icon.png';
@@ -36,7 +37,7 @@ function TaskCardComponent({
 	};
 
 	return (
-		<div className='rounded-2xl border border-purple-300/50 h-[13rem] bg-gray-200/5 p-4 shadow-sm transition hover:shadow-md cursor-pointer flex flex-col justify-between'>
+		<div className='card-container rounded-2xl border border-purple-300/50 h-[13rem] bg-gray-200/5 p-4 shadow-sm transition hover:shadow-md cursor-pointer flex flex-col justify-between'>
 			<div>
 				<div className='flex items-center gap-2 mb-2'>
 					<button
@@ -49,7 +50,7 @@ function TaskCardComponent({
 							<span className='text-white text-xs flex items-center justify-center'>✔</span>
 						)}
 					</button>
-					<h3 className='text-base leading-5 font-semibold text-wrap truncate'>{title}</h3>
+					<h3 className='text-base leading-5 font-semibold text-wrap w-[90%] truncate'>{title}</h3>
 				</div>
 
 				{description && <p className='text-sm text-gray-400 mb-2 line-clamp-2'>{description}</p>}

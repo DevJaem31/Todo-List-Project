@@ -24,6 +24,7 @@
 
 	.add-task-floater {
 		position: relative;
+		padding-inline: 0;
 	}
 
 	.add-task-button {
